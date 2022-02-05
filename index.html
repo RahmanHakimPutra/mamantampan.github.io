@@ -1,0 +1,79 @@
+<html>
+<title> Helm</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<img src="Baner.jpeg" width=100% height=60%>
+
+<div class="w3-bar w3-orange">
+ <button class="w3-bar-item w3-button" onclick="openKota('Helm Perang')">Helm Perang</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Helm Motor')">Helm Motor</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Helm Mobil')">Helm Mobil</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Helm Proyek')">Helm Proyek</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Helm Sepeda')">Helm Sepeda</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+</div>
+
+<div id="Home" class="w3-container kota w3-animate-top" style="">
+ <center>
+ <h1>Jenis-Jenis Helm </h1>
+ <hr>
+ <h2>Pelindung Kepala ( Helm )</h2>
+ <img src="Helm.jpg" style="width: 30%; height: 40%">
+</div>
+
+<div id="Helm Perang" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>Helm Perang</h2>
+ <p>Helm Perang adalah sejenis zirah personal yang dirancang secara spesifik untuk melindungi bagian kepala dalam penyerangan atau pertempuran.</p>
+ <img src="Helm Perang.jpg" style="width: 60%; height: 60%">
+</div>
+
+<div id="Helm Motor" class="w3-container kota w3-animate-opacity" style="display:none">
+ <h2>Helm Motor</h2>
+ <p>Helm yang digunakan untuk melindungi kepala bila terjadi kecelakaan lalu-lintas pada para pengguna sepeda motor. Pertama sekali dicetuskan untuk diwajibkan untuk digunakan di Indonesia oleh Kepala Kepolisian RI Hoegeng, tetapi mendapatkan penolakan yang keras pada waktu itu, kemudian ditetapkan secara resmi di dalam Undang-Undang Nomor 14 Tahun 1992.</p>
+ <img src="Helm Motor.jpg" style="width: 60%; height: 60%">
+</div>
+
+<div id="Helm Mobil" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>Helm Mobil</h2>
+ <p>Helm Mobil biasanya dipakai untuk balapan seperti F1 , Rally dan Nascar , Helm mobil dirancang lebih tebal dan kuat serta tahan api. </p>
+ <img src="Helm Mobil.jpg" style="width: 60%; height: 60%">
+</div>
+
+<div id="Helm Proyek" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>Helm Proyek</h2>
+ <p>Helm Proyek Adalah helm yang direncanakan untuk melindungi jatuhan material pada proyek pembangunan rumah, gedung ataupun juga digunakan di daerah pertambangan. helm proyek digolongkan dengan warnanya masing masing, kuning untuk pekerja, putih untuk supervisor dan merah untuk safety.</p>
+ <img src="Helm Proyek.jpg" style="width: 60%; height: 60%">
+</div>
+
+<div id="Helm Sepeda" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>Helm Sepeda</h2>
+ <p>Helm sepeda adalah helm yang digunakan oleh pengguna sepeda, didesain berbeda dari helm sepeda motor karena kecepatan sepeda hanya sekitar 15 km/jam. Walaupun di Indonesia belum diwajibkan untuk menggunakan helm sepeda, tetapi sudah banyak digunakan oleh masyarakat dalam kegiatan bersepeda santai pada hari libur, tetapi pada olahraga balapan sepeda atau kejuaraan sepeda gunung helm sudah diwajibkan.</p>
+ <img src="Helm Sepeda.jpg" style="width: 60%; height: 60%">
+</div>
+
+<div id="Profile" class="w3-container kota w3-animate-left" style="display:none">
+  <h2>Profile</h2>
+  <p>Nama  : Rahman Hakim Putra tambunan</p>
+  <p>TTL   : Bandung , 19 Mei 2003</p> 
+  <p>Hobby : Gaming</p> 
+  <p>Nim   : 10121042</p> 
+  <p>Kelas : IF - 2</p> 
+  
+  <img src="rahman.jpeg" style="width: 30%; height: 60%">
+ </div>
+ 
+
+<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaKota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
